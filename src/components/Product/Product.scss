@@ -1,0 +1,38 @@
+.box{
+  background-color:#F7F7F7 ;
+  height: 540px;
+  // backgroundColor:"#F7F7F7"
+
+  h3{
+    padding: 10px;
+  }
+
+p{
+  padding-left: 10px;
+}
+svg{
+  color: #E7426A;
+}
+
+  .wrapperForPriceAndCart {
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; /* Распределяет дочерние элементы равномерно */
+    align-items: center; /* Выравнивает элементы по центру по вертикали */
+    margin-top: auto; /* Прижимает к нижней части контейнера .box */
+    border-top: 2px solid #EDEDF0;
+
+  }
+    h4{
+      //padding: 10px;
+      color: #E7426A;
+    }
+  }
+  .Produc__pagination{
+   display: flex;
+   justify-content: center;
+   padding-top: 10px;
+    svg{
+      color: black;
+    }
+  }

@@ -1,0 +1,19 @@
+.overlay {
+   position: fixed;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0.9);
+   z-index: 999;
+ }
+
+.spinner {
+   position: fixed;
+   margin: auto;
+   top: 50%; /* Центр экрана по вертикали */
+  left: 50%; /* Центр экрана по горизонтали */
+   width: fit-content;
+   transform: translate(-50%, -50%) scale(0.4 );;
+   z-index: 1000;
+ }

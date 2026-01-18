@@ -1,0 +1,40 @@
+
+ 
+ /* Стили для модального окна Ant Design могут быть добавлены, если необходимо изменить его позиционирование */
+ .ant-modal {
+   position: fixed;
+   top: 9%; /* или любое другое значение для смещения вниз от верхнего края экрана */
+   right: 4%; /* Смещение от правого края экрана */
+   svg {
+      color: black;
+      height: 20px;
+      width: 36px;
+   }
+ }
+ .cart__box{
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 30px;
+  text-align: center;
+  .cart__box__column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  button{
+    padding:0;
+    margin-left: 5px;
+  }
+  .cart__btn_wrap{
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  p{
+    font-size: 18px;
+  }
+  img{
+    height: 200px;
+  }
+ }
