@@ -10,7 +10,7 @@ export const ADD_TO_CART = createAsyncThunk(
         method: "POST",
         headers: {
            "Content-Type": "application/json" ,
-           Authorization: `Bearer ${token}`,
+           Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
       
          
@@ -32,7 +32,7 @@ export const DECREASE_CART = createAsyncThunk(
         method: "POST",
         headers: {
            "Content-Type": "application/json" ,
-           Authorization: `Bearer ${token}`,
+           Authorization: `Bearer ${localStorage.getItem("token")}`,
       },
       
          
@@ -54,7 +54,7 @@ export const DECREASE_CART = createAsyncThunk(
         method: "GET",
         headers:{
           "Content-Type": "application/json",
-          Authorization: `Bearer ${token}`
+          Authorization: `Bearer ${localStorage.getItem("token")}`
         }
       })
       const data = response.json()

@@ -1,6 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { BACKEND_HOST_API } from "../config";
 const token = localStorage.getItem("token");
+console.log(token);
 export const FAVORITE_ACTION_ASYNC = createAsyncThunk(
   "favorite/toggle-favorite",
   async (id, { rejectedWithValue, dispatch }) => {
@@ -12,7 +13,7 @@ export const FAVORITE_ACTION_ASYNC = createAsyncThunk(
           method: "POST",
           headers: {
             "Content-type": "application/Json",
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
         }
       );
@@ -35,7 +36,7 @@ export const FAVORITE_GET_ASYNC = createAsyncThunk(
          method:"GET",
           headers: {
             "Content-type": "aplication/json",
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
           },
         }
       );
